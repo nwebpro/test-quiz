@@ -4,7 +4,7 @@
 
 # 🔥 TestQuiz - Website Design using React & Tailwind CSS
 
-## 🔥[Live Demo](https://pricing-club-nwebpro.netlify.app/)
+## 🔥[Live Demo](https://testquiz-nwebpro.netlify.app/)
 
 # About the Project
 TestQuiz is a simple react quiz app website. I have created this as an assignment purpose on this website. I have used lots of libraries.
