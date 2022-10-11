@@ -4,6 +4,7 @@ import ErrorPage from './components/ErrorPage';
 import Home from "./components/Home";
 import Statistics from "./components/Statistics";
 import QuizTest from "./components/QuizTest";
+import Topics from "./components/Topics";
 
 export const router = createBrowserRouter([
     {
@@ -19,6 +20,11 @@ export const router = createBrowserRouter([
             {
                 path: '/home',
                 element: <Home />
+            },
+            
+            {
+                path: '/topics',
+                element: <Topics />
             },
             {
                 path: '/quiz/:quizId',

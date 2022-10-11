@@ -1,6 +1,7 @@
 import React from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Option from './Option';
 
 const QuizAnswer = ({qa, index}) => {
     const {question, options, correctAnswer} = qa;
@@ -16,7 +17,6 @@ const QuizAnswer = ({qa, index}) => {
     const showCorrectAnswer = () => {
         toast.success(`${correctAnswer}`, {autoClose: 100});
     }
-
 
     return (
         <div className='max-w-xl sm:mx-auto lg:max-w-2xl mb-5 bg-[#f1f1f1] p-10 rounded relative'>
@@ -35,13 +35,8 @@ const QuizAnswer = ({qa, index}) => {
                 <div>
                     <ul className='grid grid-cols-1 gap-3'>
                         {
-                            options.map(option => (
-                                <div className="w-full text-sm font-medium text-left">
-                                    <label className="form-control rounded-lg label cursor-pointer flex items-center p-4 focus:border-2 focus:border-indigo-400 border-2 border-gray-200">
-                                        <input onClick={() => correctAnswers(option)}  type="radio" name="radio" className="radio checked:bg-indigo-600" />
-                                        <p className='pl-5'>{option}</p>
-                                    </label>
-                                </div>
+                            options.map((option, index) => (
+                                <Option key={index} option={option} correctAnswers={correctAnswers} />
                             ))
                         }
                     </ul>
