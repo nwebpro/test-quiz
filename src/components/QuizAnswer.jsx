@@ -31,7 +31,7 @@ const QuizAnswer = ({qa, index}) => {
 
             </div>
             <div>
-                <p className='text-center mb-5'><span>{index + 1}.</span> {question}</p>
+                <p className='text-center mb-5'><span className='font-bold '>Quiz {index + 1}:</span> {question}</p>
                 <div>
                     <ul className='grid grid-cols-1 gap-3'>
                         {
