@@ -14,7 +14,7 @@ const QuizAnswer = ({qa}) => {
     }
 
     const showCorrectAnswer = () => {
-        toast.success(`${correctAnswer}`);
+        toast.success(`${correctAnswer}`, {autoClose: 100});
     }
 
     return (
