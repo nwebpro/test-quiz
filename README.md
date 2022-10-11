@@ -12,6 +12,7 @@ TestQuiz is a simple react quiz app website. I have created this as an assignmen
 # Technologies Used:⚛️
 - Tailwind CSS
 - React Js
+- Context API
 - React Router
 - Rechart Js
 - Hero icons
