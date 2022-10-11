@@ -48,6 +48,16 @@ const Header = () => {
                                 Statistics
                             </Link>
                         </li>
+                        <li>
+                            <Link
+                                to="/blog"
+                                aria-label="Blog"
+                                title="Blog"
+                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                            >
+                                Blog
+                            </Link>
+                        </li>
                     </ul>
                 <div className="lg:hidden">
                     <button
@@ -122,6 +132,26 @@ const Header = () => {
                                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                             >
                                             Statistics
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/topics"
+                                            aria-label="Topics"
+                                            title="Topics"
+                                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                            >
+                                            Statistics
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/blog"
+                                            aria-label="Blog"
+                                            title="Blog"
+                                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                            >
+                                            Blog
                                         </Link>
                                     </li>
                                 </ul>
