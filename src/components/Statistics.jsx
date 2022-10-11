@@ -6,7 +6,7 @@ const Statistics = () => {
   const quizs = useContext(QuizTopic);
 
     return (
-        <section className="min-h-screen flex items-center justify-center bg-gray-50">
+        <section className="px-5 lg:px-0 py-10 md:py-20 lg:py-40 flex items-center justify-center bg-gray-50">
             <div className="w-full max-w-3xl bg-white p-6 shadow-xl rounded-lg">
                 {/* <ResponsiveContainer width="100%" height="100%"> */}
                     <LineChart width={600} height={300} data={quizs} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>

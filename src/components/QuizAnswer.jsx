@@ -2,7 +2,7 @@ import React from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const QuizAnswer = ({qa}) => {
+const QuizAnswer = ({qa, index}) => {
     const {question, options, correctAnswer} = qa;
 
     const correctAnswers = (option) => {
@@ -17,6 +17,7 @@ const QuizAnswer = ({qa}) => {
         toast.success(`${correctAnswer}`, {autoClose: 100});
     }
 
+
     return (
         <div className='max-w-xl sm:mx-auto lg:max-w-2xl mb-5 bg-[#f1f1f1] p-10 rounded relative'>
             <ToastContainer position="top-center" autoClose={1000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
@@ -30,13 +31,16 @@ const QuizAnswer = ({qa}) => {
 
             </div>
             <div>
-                <h1 className='text-center mb-5'>{question}</h1>
+                <p className='text-center mb-5'><span>{index + 1}.</span> {question}</p>
                 <div>
                     <ul className='grid grid-cols-1 gap-3'>
                         {
                             options.map(option => (
-                                <div>
-                                    <button className='w-full cursor-pointer rounded-lg border-2 border-gray-200 p-4 text-sm font-medium text-left focus:border-2 focus:border-indigo-400' onClick={() => correctAnswers(option)}>{option}</button>
+                                <div className="w-full text-sm font-medium text-left">
+                                    <label className="form-control rounded-lg label cursor-pointer flex items-center p-4 focus:border-2 focus:border-indigo-400 border-2 border-gray-200">
+                                        <input onClick={() => correctAnswers(option)}  type="radio" name="radio" className="radio checked:bg-indigo-600" />
+                                        <p className='pl-5'>{option}</p>
+                                    </label>
                                 </div>
                             ))
                         }
