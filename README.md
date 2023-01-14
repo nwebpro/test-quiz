@@ -7,7 +7,7 @@
 ## 🔥[Live Demo](https://testquiz-nwebpro.netlify.app/)
 
 # About the Project
-TestQuiz is a simple react quiz app website. I have created this as an assignment purpose on this website. I have used lots of libraries.
+TestQuiz is a simple react quiz app website. I have created this as an assignment purpose on this website. I have used lots of libraries
 
 # Technologies Used:⚛️
 - Tailwind CSS
